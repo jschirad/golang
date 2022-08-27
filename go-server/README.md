@@ -1,4 +1,4 @@
 ### Simple Go Server 
 
 
-![](./img.png)
+![](./img2.png)
