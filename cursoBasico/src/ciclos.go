@@ -8,6 +8,10 @@ func main() {
 	for i := 0; i < 10; i++ {
 		fmt.Println(i)
 	}
+	fmt.Println("For Conditional inverso")
+	for i := 10; i > 0; i-- {
+		fmt.Println(i)
+	}
 	// Ciclo while
 	fmt.Println("While Conditional")
 	counter := 0
@@ -16,9 +20,9 @@ func main() {
 		counter++
 	}
 	fmt.Println("For Forever Conditional")
-	counterForever := 0
-	for {
-		fmt.Println(counterForever)
-		counterForever++
-	}
+	// counterForever := 0
+	// for {
+	// 	fmt.Println(counterForever)
+	// 	counterForever++
+	// }
 }
