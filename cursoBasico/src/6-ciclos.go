@@ -26,3 +26,5 @@ func main() {
 	// 	counterForever++
 	// }
 }
+
+// En go solo tenemos un ciclo iterativo : for

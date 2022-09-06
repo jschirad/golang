@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Declaración de mensajes
+	// Messages
 	helloMessage := "Hello"
 	worldMessage := "world!"
 

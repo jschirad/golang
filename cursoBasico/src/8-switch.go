@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// Para cuando quiero iterar sobre una misma variable
 	modulo := 4 % 2
 	switch modulo {
 	case 0:
@@ -11,7 +12,7 @@ func main() {
 		fmt.Println("Es impar")
 	}
 
-	// Sin condicion
+	// Sin condicion puede servir para anidar multiples condiciones
 	value := 200
 	switch {
 	case value > 100:
