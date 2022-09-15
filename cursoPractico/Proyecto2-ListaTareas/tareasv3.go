@@ -33,6 +33,22 @@ func (t *task) newName(nombre string) {
 	t.nombre = nombre
 }
 
+func (t *taskList) printList() {
+	for _, tarea := range t.tasks {
+		fmt.Println("Nombre", tarea.nombre)
+		fmt.Println("Descripcion", tarea.description)
+	}
+}
+
+func (t *taskList) printCompletedList() {
+	for _, tarea := range t.tasks {
+		if tarea.completed {
+			fmt.Println("Nombre", tarea.nombre)
+			fmt.Println("Descripcion", tarea.description)
+		}
+	}
+}
+
 func main() {
 	t := &task{
 		nombre:      "Curso Practico de Go",
@@ -60,14 +76,19 @@ func main() {
 	fmt.Println(len(lista.tasks))
 	lista.addTask(t3)
 
-	for i := 0; i < len(lista.tasks); i++ {
-		fmt.Println("Index", i, "Nombre", lista.tasks[i].nombre)
-	}
-
-	for index, tarea := range lista.tasks {
-		fmt.Println("Index", index, "Nombre", tarea)
-	}
-	// tareas v2
+	lista.printList()
+	fmt.Println("Tareas completadas")
+	lista.tasks[0].marcarCompleta()
+	lista.printCompletedList()
+	//tareav3
+	// for i := 0; i < len(lista.tasks); i++ {
+	// 	fmt.Println("Index", i, "Nombre", lista.tasks[i].nombre)
+	// }
+	// // Best practice
+	// for index, tarea := range lista.tasks {
+	// 	fmt.Println("Index", index, "Nombre", tarea)
+	// }
+	// // tareas v2
 	// fmt.Println(len(lista.tasks))
 	// fmt.Println(lista.tasks[2])
 	// lista.deleteTask(0)
