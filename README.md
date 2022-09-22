@@ -3,9 +3,7 @@
 ### Roadmap Go
 ![](./Roadmap-go.png)
 
-#### Learn the Basics
-:white_check_mark: Basic Syntax
-
+:white_check_mark: Learn the Basics
 
 #### Recursos utilies
 
