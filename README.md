@@ -1,7 +1,11 @@
 ## Learning Golang
 
-#### Roadmap Go
+### Roadmap Go
 ![](./Roadmap-go.png)
+
+#### Learn the Basics
+:white_check_mark: Basic Syntax
+
 
 #### Recursos utilies
 
