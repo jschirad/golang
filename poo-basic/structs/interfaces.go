@@ -19,8 +19,26 @@ type FullTimeEmployee struct {
 	Employee
 }
 
-func GetMessage(p Person) {
-	fmt.Printf("%s with age %d \n", p.name, p.age)
+func (ftEmployee FullTimeEmployee) getMessage() string {
+	return "Full Time Employee"
+}
+
+type TemporalTimeEmployee struct {
+	Person
+	Employee
+	taxRate int
+}
+
+func (tEmployee TemporalTimeEmployee) getMessage() string {
+	return "Temporal Time Employee"
+}
+
+type PrintInfo interface {
+	getMessage() string
+}
+
+func getMessage(p PrintInfo) {
+	fmt.Println(p.getMessage())
 }
 
 func main() {
@@ -29,5 +47,9 @@ func main() {
 	ftEmployee.age = 26
 	ftEmployee.id = 5
 	fmt.Printf("%v\n", ftEmployee)
-	GetMessage(ftEmployee.Person)
+
+	tEmployee := TemporalTimeEmployee{}
+	getMessage(tEmployee)
+	getMessage(ftEmployee)
+
 }
