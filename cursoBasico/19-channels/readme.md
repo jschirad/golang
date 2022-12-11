@@ -1,0 +1,5 @@
+This code is using channels to synchronize the execution of two goroutines. In Go, channels are a type that provides a way for goroutines to communicate with each other and synchronize their execution.
+
+In this code, the main function creates a channel using the make function and then starts a goroutine by calling the go keyword and passing it a function and the channel as arguments. This goroutine calls the say function, which writes a string value to the channel. Meanwhile, the main function is waiting for the goroutine to finish by reading a value from the channel using the <- operator. When the value is received, it is printed to the console. This ensures that the goroutine has finished executing before the value is printed.
+
+Channels provide a way to synchronize the execution of goroutines and ensure that data is processed in the correct order.

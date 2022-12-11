@@ -1,0 +1,5 @@
+This code is using the sync.WaitGroup type from the sync package to create a synchronization mechanism for managing the execution of concurrent goroutines. A WaitGroup is a type that provides a simple way to wait for a set of goroutines to finish running.
+
+In this code, the main function creates a WaitGroup value and adds a single goroutine to it by calling the Add method with the argument 1. Then, it starts a goroutine that calls the say function and passes a pointer to the WaitGroup instance. The say function calls the Done method on the WaitGroup to indicate that it has finished running. Finally, the main function waits for the goroutine to finish by calling the Wait method on the WaitGroup.
+
+The code also demonstrates using an anonymous function as a goroutine. An anonymous function is a function that is defined and called without being assigned to a name. In this case, the anonymous function is defined inline and passed as an argument to the go keyword, which starts a new goroutine. The anonymous function simply prints the string "Bye!" to the console.

@@ -1,0 +1,5 @@
+This program checks if a string is a palindrome. A palindrome is a word or phrase that is spelled the same way forwards and backwards, ignoring punctuation, case, and spaces.
+
+The isPalindromo function takes a string as input and converts it to lowercase using the strings.ToLower function. Then it creates a new string called textReverse, which is initially empty. It then iterates over the characters in minusText in reverse order and appends each character to textReverse. Finally, it compares minusText and textReverse to see if they are equal, and prints "Es Palindrome" if they are equal or "No es Palindromo" if they are not.
+
+In the main function, a slice of strings called slice is declared and initialized with some values. The program then iterates over the elements in slice and prints the index of each element using a for loop with range. Finally, the isPalindromo function is called with the string "amor a roma" as the input.
